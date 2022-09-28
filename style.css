@@ -17,7 +17,7 @@ body{
 }
 
 .card{
-  max-width: 300px;
+  max-width: 330px;
   padding: 20px;
   margin: 20px;
   background-color: var(--clr-card);
