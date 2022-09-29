@@ -1,7 +1,97 @@
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
 }
 :root{
   --clr-body: #d3e1ef;
@@ -9,7 +99,7 @@
 }
 body{
   background-color: var(--clr-body);
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -17,39 +107,30 @@ body{
 }
 
 .card{
-  max-width: 330px;
-  padding: 20px;
-  margin: 20px;
+  max-width: 20rem;
+  padding: 1.25rem;
   background-color: var(--clr-card);
-  border-radius: 15px;
+  border-radius: 0.938rem;
+  text-align: center;
 }
 
-.image img{
+ img{
   width: 100%;
-  border-radius: 10px;
-}
-.icon{
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  
-}
-img{
-  display: flex;
-  align-items: center;
+  border-radius: 0.625rem;
 }
 
 h1{
-  text-align: center;
-  margin: 20px 0;
+  margin: 1.25rem 0;
   font-size: 1.3rem;
   line-height: 1.4em;
   opacity: .8;
 }
 p{
-  text-align: center;
   font-size: 1rem;
   line-height: 1.4em;
   padding-bottom: 1rem;
   opacity: .7;
+}
+.icon{
+  width: 4rem;
 }
