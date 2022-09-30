@@ -112,6 +112,7 @@ body{
   background-color: var(--clr-card);
   border-radius: 0.938rem;
   text-align: center;
+  margin: 20px;
 }
 
  img{
